@@ -7,30 +7,25 @@ const ProductList = ({ onDelete, content, onAdd }) => {
   const columns = [
     {
       title: 'Name',
-      dataIndex: 'name'
+      dataIndex: 'name',
     },
     {
       title: 'Action',
-      render: (text, record, index)=>{
-        console.log(text, record, index)
+      render: (text, record, index) => {
+        console.log(text, record, index);
         return (
-         <Popconfirm title='Delete?'
-                     onConfirm={() => onDelete(record.id)}
-                     onCancel={() => onAdd(index)}>
-           <Button>Delete</Button>
-         </Popconfirm>
+          <Popconfirm
+            title="Delete?"
+            onConfirm={() => onDelete(record.id)}
+            onCancel={() => onAdd(index)}
+          >
+            <Button>Delete</Button>
+          </Popconfirm>
         );
-      }
-     },
+      },
+    },
   ];
-  return (
-    <Table
-      dataSource={content}
-      columns={columns}/>
-  );
+  return <Table dataSource={content} columns={columns} />;
 };
 
 export default ProductList;
-
-
-

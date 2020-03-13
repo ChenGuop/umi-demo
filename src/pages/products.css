@@ -2,3 +2,7 @@
 .title {
   background: rgb(121, 242, 148);
 }
+
+#components-form-demo-control-hooks .ant-btn {
+  margin-right: 8px;
+}
