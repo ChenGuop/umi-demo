@@ -3,10 +3,10 @@ import { Table, Popconfirm, Button } from 'antd';
 /*编写 UI Component*/
 /*随着应用的发展，你会需要在多个页面分享 UI 元素 (或在一个页面使用多次)，
 在 umi 里你可以把这部分抽成 component 。*/
-const ProductList = ({ onDelete, content, onAdd }) => {
+const ProductList = ({ onDelete, content }) => {
   const columns = [
     {
-      title: 'Name',
+      title: '名称',
       dataIndex: 'name',
     },
     {
@@ -17,7 +17,7 @@ const ProductList = ({ onDelete, content, onAdd }) => {
           <Popconfirm
             title="Delete?"
             onConfirm={() => onDelete(record.id)}
-            onCancel={() => onAdd(index)}
+            onCancel={() => {}}
           >
             <Button>Delete</Button>
           </Popconfirm>

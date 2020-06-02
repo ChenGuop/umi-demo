@@ -9,10 +9,10 @@ export default {
   namespace: 'products',
   /*初始值*/
   state: [
-    // { name: 'dva', id: 'dva' },
-    // { name: 'antd', id: 'antd' },
-    // { name: 'react', id: 'react' },
-    // { name: 'umijs', id: 'umijs' },
+    { name: 'dva11', id: 'dva' },
+    { name: 'antd3243', id: 'antd' },
+    { name: 'react123', id: 'react' },
+    { name: 'umijs', id: 'umijs' },
   ],
   /*等同于redux里的reducer， 接收action， 同步state 计算*/
   reducers: {
